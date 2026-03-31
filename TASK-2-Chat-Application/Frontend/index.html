@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CodTech Chat</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="chat-wrapper">
+
+<div class="chat-header">
+
+<img src="images/chat-logo.png" class="logo">
+
+<h2>CodTech Live Chat</h2>
+
+</div>
+
+<div class="join-section">
+
+<input id="username" placeholder="Enter your name">
+
+<button onclick="joinChat()">Join</button>
+
+</div>
+
+<div id="chatArea" style="display:none">
+
+<div id="messages"></div>
+
+<div class="input-area">
+
+<input id="messageInput" placeholder="Type message">
+
+<button onclick="sendMessage()">Send</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
